@@ -32,6 +32,8 @@ st.pyplot(fig)
 # Kesimpulan
 st.subheader("Kesimpulan")
 st.write("""
-1. **Tren Peminjaman Sepeda**: Pola musiman terlihat jelas.
-2. **Pengaruh Cuaca**: Cuaca buruk menurunkan jumlah peminjaman.
+1. **Tren Peminjaman Sepeda**: Pola musiman terlihat jelas, di mana peminjaman sepeda cenderung meningkat pada bulan tertentu saat cuaca lebih nyaman. Pihak pengelola bisa meningkatkan jumlah sepeda saat musim sibuk untuk mengakomodasi permintaan tinggi.
+2. **Pengaruh Cuaca**: Peminjaman sepeda menurun drastis pada kondisi cuaca buruk. Perusahaan dapat menawarkan diskon atau promosi pada hari-hari hujan untuk menjaga tingkat penggunaan tetap stabil.
 """)
+
+st.caption('Mikacinta Gustina Amalan Toyibah, 2025')
