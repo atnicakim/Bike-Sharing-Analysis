@@ -21,13 +21,18 @@ filtered_df = day_df[(day_df["dteday"] >= pd.to_datetime(start_date)) & (day_df[
 st.subheader("Tren Peminjaman Sepeda Sepanjang Tahun")
 fig, ax = plt.subplots(figsize=(12, 5))
 sns.lineplot(x=filtered_df["dteday"], y=filtered_df["cnt"], ax=ax)
+ax.set_xlabel("Tanggal")  # Mengubah label sumbu X
+ax.set_ylabel("Jumlah Peminjaman")  # Mengubah label sumbu Y
 st.pyplot(fig)
 
 # Pengaruh Cuaca terhadap Peminjaman
 st.subheader("Pengaruh Cuaca terhadap Peminjaman Sepeda")
 fig, ax = plt.subplots(figsize=(12, 5))
 sns.boxplot(x=filtered_df["weathersit"], y=filtered_df["cnt"], ax=ax)
+ax.set_xlabel("Kondisi Cuaca")  # Mengubah label sumbu X
+ax.set_ylabel("Jumlah Peminjaman")  # Mengubah label sumbu Y
 st.pyplot(fig)
+
 
 # Kesimpulan
 st.subheader("Kesimpulan")
